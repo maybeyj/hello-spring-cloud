@@ -1,0 +1,14 @@
+spring:
+  application:
+    #\u5BF9\u5E94\u914D\u7F6E\u6587\u4EF6\u89C4\u5219\u4E2D\u7684{application}\u90E8\u5206
+    name: config-client
+  cloud:
+    config:
+      #\u914D\u7F6E\u4E2D\u5FC3config-server\u7684\u5730\u5740
+      uri: http://localhost:1201/
+      #\u5BF9\u5E94\u914D\u7F6E\u6587\u4EF6\u89C4\u5219\u4E2D\u7684{profile}\u90E8\u5206
+      profile: default
+      #\u5BF9\u5E94\u914D\u7F6E\u6587\u4EF6\u89C4\u5219\u4E2D\u7684{label}\u90E8\u5206
+      label: master
+server:
+  port: 2001
